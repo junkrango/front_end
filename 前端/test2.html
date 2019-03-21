@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文档标题</title>
+<link rel="stylesheet" href="css/mdui.css">
+<script src="js/mdui.min.js"></script>
+<!-- <style>
+.text_shandows_set{color: black; text-shadow: black 0.1em 0.1em 0.2em}
+</style> -->
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar  mdui-theme-primary-grey mdui-theme-accent-pink" style="background-image:url('')" >
+
+
+<header class="mdui-appbar mdui-appbar-fixed">
+  <div >
+    <div class="mdui-toolbar mdui-color-theme">
+    <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"><i class="mdui-icon material-icons">menu</i></span>
+    <a href="javascript:;" class="mdui-typo-headline">MDUI</a>
+    <a href="javascript:;" class="mdui-typo-title">Title</a>
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
+
+    </div>
+  </div>
+</header>
+
+<div class="mdui-drawer mdui-color-white mdui-shadow-24" id="main-drawer">
+  <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+    <div class="mdui-collapse-item ">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">near_me</i>
+        <div class="mdui-list-item-content">开始使用</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="./download" class="mdui-list-item mdui-ripple ">安装</a>
+        <a href="./compatibility" class="mdui-list-item mdui-ripple ">兼容性</a>
+        <a href="./jq" class="mdui-list-item mdui-ripple ">JavaScript 工具库</a>
+        <a href="./global" class="mdui-list-item mdui-ripple ">JavaScript 全局方法</a>
+      </div>
+    </div>
+
+    <div class="mdui-collapse-item ">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-deep-orange">layers</i>
+        <div class="mdui-list-item-content">样式</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="./color" class="mdui-list-item mdui-ripple ">颜色与主题</a>
+        <a href="./font" class="mdui-list-item mdui-ripple ">字体</a>
+        <a href="./grid" class="mdui-list-item mdui-ripple ">网格布局</a>
+        <a href="./typo" class="mdui-list-item mdui-ripple ">排版</a>
+        <a href="./icon" class="mdui-list-item mdui-ripple ">图标</a>
+        <a href="./media" class="mdui-list-item mdui-ripple ">媒体</a>
+        <a href="./helper" class="mdui-list-item mdui-ripple ">辅助类</a>
+        <a href="./shadow" class="mdui-list-item mdui-ripple ">阴影</a>
+      </div>
+    </div>
+
+    <div class="mdui-collapse-item mdui-collapse-item-open">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">widgets</i>
+        <div class="mdui-list-item-content">组件</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="./ripple" class="mdui-list-item mdui-ripple ">涟漪动画效果</a>
+        <a href="./button" class="mdui-list-item mdui-ripple ">按钮</a>
+        <a href="./fab" class="mdui-list-item mdui-ripple ">浮动操作按钮</a>
+        <a href="./select" class="mdui-list-item mdui-ripple ">下拉选择</a>
+        <a href="./divider" class="mdui-list-item mdui-ripple ">分隔线</a>
+        <a href="./panel" class="mdui-list-item mdui-ripple ">可扩展面板</a>
+        <a href="./textfield" class="mdui-list-item mdui-ripple ">文本框</a>
+        <a href="./selection_control" class="mdui-list-item mdui-ripple ">选择控件</a>
+        <a href="./slider" class="mdui-list-item mdui-ripple ">滑块</a>
+        <a href="./list" class="mdui-list-item mdui-ripple ">列表</a>
+        <a href="./list_control" class="mdui-list-item mdui-ripple ">列表控制</a>
+        <a href="./grid_list" class="mdui-list-item mdui-ripple ">网格列表</a>
+        <a href="./tab" class="mdui-list-item mdui-ripple ">Tab 选项卡</a>
+        <a href="./toolbar" class="mdui-list-item mdui-ripple ">工具栏</a>
+        <a href="./appbar" class="mdui-list-item mdui-ripple ">应用栏</a>
+        <a href="./drawer" class="mdui-list-item mdui-ripple mdui-list-item-active">抽屉式导航</a>
+        <a href="./bottom_nav" class="mdui-list-item mdui-ripple ">底部导航栏</a>
+        <a href="./card" class="mdui-list-item mdui-ripple ">卡片</a>
+        <a href="./chip" class="mdui-list-item mdui-ripple ">纸片</a>
+        <a href="./tooltip" class="mdui-list-item mdui-ripple ">工具提示</a>
+        <a href="./snackbar" class="mdui-list-item mdui-ripple ">Snackbar</a>
+        <a href="./table" class="mdui-list-item mdui-ripple ">表格</a>
+        <a href="./dialog" class="mdui-list-item mdui-ripple ">对话框</a>
+        <a href="./menu" class="mdui-list-item mdui-ripple ">菜单</a>
+        <a href="./progress" class="mdui-list-item mdui-ripple ">进度指示器</a>
+      </div>
+    </div>
+
+    <div class="mdui-collapse-item ">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-brown">view_carousel</i>
+        <div class="mdui-list-item-content">JavaScript 插件</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="./collapse" class="mdui-list-item mdui-ripple ">Collapse</a>
+        <a href="./headroom" class="mdui-list-item mdui-ripple ">Headroom</a>
+      </div>
+    </div>
+
+    <div class="mdui-collapse-item ">
+      <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-purple">local_mall</i>
+        <div class="mdui-list-item-content">资源</div>
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+      </div>
+      <div class="mdui-collapse-item-body mdui-list">
+        <a href="./material_icon" class="mdui-list-item mdui-ripple ">Material 图标</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="mdui-container " style="max-width: 400px">
+  <div class="mdui-panel " mdui-panel>
+    <div class="mdui-panel-item mdui-color-red">
+      <div class="mdui-panel-item-header">First</div>
+      <div class="mdui-panel-item-body">
+        <p>First content</p>
+        <p>First content</p>
+        <p>First content</p>
+
+        <div class="mdui-panel" mdui-panel>
+          <div class="mdui-panel-item">
+            <div class="mdui-panel-item-header">First</div>
+            <div class="mdui-panel-item-body">
+              <p>First content</p>
+              <p>First content</p>
+              <p>First content</p>
+
+              <div class="mdui-panel" mdui-panel>
+                <div class="mdui-panel-item">
+                  <div class="mdui-panel-item-header">First</div>
+                  <div class="mdui-panel-item-body">
+                    <p>First content</p>
+                    <p>First content</p>
+                    <p>First content</p>
+                  </div>
+                </div>
+                <div class="mdui-panel-item">
+                  <div class="mdui-panel-item-header">Second</div>
+                  <div class="mdui-panel-item-body">
+                    <p>Second content</p>
+                    <p>Second content</p>
+                    <p>Second content</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="mdui-panel-item mdui-color-grey">
+            <div class="mdui-panel-item-header">Second</div>
+            <div class="mdui-panel-item-body">
+              <p>Second content</p>
+              <p>Second content</p>
+              <p>Second content</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="mdui-panel-item mdui-color-pink">
+      <div class="mdui-panel-item-header">Second</div>
+      <div class="mdui-panel-item-body">
+        <p>Second content</p>
+        <p>Second content</p>
+        <p>Second content</p>
+      </div>
+    </div>
+    <div class="mdui-panel-item">
+      <div class="mdui-panel-item-header">Third</div>
+      <div class="mdui-panel-item-body">
+        <p>Third content</p>
+        <p>Third content</p>
+        <p>Third content</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="mdui-container">
+  <div class="mdui-row-sm-2 mdui-row-md-4">
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <img src="x.png">
+      </div>
+      </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <img src="x.png">
+      </div>
+      </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <img src="x.png">
+      </div>
+      </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <img src="x.png">
+      </div>
+      </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <img src="x.png">
+      </div>
+      </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <img src="x.png">
+      </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  </div>
+
+
+
+<div class="mdui-container">
+  <div class="mdui-row-sm-2  mdui-row-md-6 ">
+    <div class="mdui-col ">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <video class=" mdui-card mdui-hoverable mdui-img-rounded" style="max-width: 400px;margin-top: 20px;" controls>
+          <source src="http://27.221.99.235/6975E8C0D904483BA295656F24/03000A01005AE9812965D6305C062B3DA5133B-7B28-4741-BBFF-3E782949DAC1.mp4?ccode=0512&duration=379&expire=18000&psid=7d178125846ce18cb6141bce477d016a&sp=&ups_client_netip=3d36b6d9&ups_ts=1526264405&ups_userid=&utid=7dZtE1C0V04CAd6ISKb%2FPwhH&vid=XMzU3OTA4MzQ0MA%3D%3D&vkey=Baf5a37366715c25593b9f40b15817ff0" type="video/mp4">
+        </video>
+        <!-- 卡片中可以包含一个或多个菜单按钮 -->
+  <div class="mdui-card-menu">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+  </div>
+</div>
+
+<!-- 卡片的标题和副标题 -->
+<div class="mdui-card-primary">
+  <div class="mdui-card-primary-title">Title</div>
+  <div class="mdui-card-primary-subtitle">Subtitle</div>
+</div>
+
+<!-- 卡片的内容 -->
+<div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？sfffffffffffffffffffffffffffffffffffffffffffffff」</div>
+
+<!-- 卡片的按钮 -->
+<div class="mdui-card-actions">
+  <button class="mdui-btn mdui-ripple">action 1</button>
+  <button class="mdui-btn mdui-ripple">action 2</button>
+  <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+</div>
+
+    </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <video class=" mdui-card mdui-hoverable mdui-img-rounded" style="max-width: 400px;margin-top: 20px;" controls>
+          <source src="http://27.221.99.235/6975E8C0D904483BA295656F24/03000A01005AE9812965D6305C062B3DA5133B-7B28-4741-BBFF-3E782949DAC1.mp4?ccode=0512&duration=379&expire=18000&psid=7d178125846ce18cb6141bce477d016a&sp=&ups_client_netip=3d36b6d9&ups_ts=1526264405&ups_userid=&utid=7dZtE1C0V04CAd6ISKb%2FPwhH&vid=XMzU3OTA4MzQ0MA%3D%3D&vkey=Baf5a37366715c25593b9f40b15817ff0" type="video/mp4">
+        </video>
+        <!-- 卡片中可以包含一个或多个菜单按钮 -->
+  <div class="mdui-card-menu">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+  </div>
+</div>
+
+<!-- 卡片的标题和副标题 -->
+<div class="mdui-card-primary">
+  <div class="mdui-card-primary-title">Title</div>
+  <div class="mdui-card-primary-subtitle">Subtitle</div>
+</div>
+
+<!-- 卡片的内容 -->
+<div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+
+<!-- 卡片的按钮 -->
+<div class="mdui-card-actions">
+  <button class="mdui-btn mdui-ripple">action 1</button>
+  <button class="mdui-btn mdui-ripple">action 2</button>
+  <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+</div>
+
+    </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <video class=" mdui-card mdui-hoverable mdui-img-rounded" style="max-width: 400px;margin-top: 20px;" controls>
+          <source src="http://27.221.99.235/6975E8C0D904483BA295656F24/03000A01005AE9812965D6305C062B3DA5133B-7B28-4741-BBFF-3E782949DAC1.mp4?ccode=0512&duration=379&expire=18000&psid=7d178125846ce18cb6141bce477d016a&sp=&ups_client_netip=3d36b6d9&ups_ts=1526264405&ups_userid=&utid=7dZtE1C0V04CAd6ISKb%2FPwhH&vid=XMzU3OTA4MzQ0MA%3D%3D&vkey=Baf5a37366715c25593b9f40b15817ff0" type="video/mp4">
+        </video>
+        <!-- 卡片中可以包含一个或多个菜单按钮 -->
+  <div class="mdui-card-menu">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+  </div>
+</div>
+
+<!-- 卡片的标题和副标题 -->
+<div class="mdui-card-primary">
+  <div class="mdui-card-primary-title">Title</div>
+  <div class="mdui-card-primary-subtitle">Subtitle</div>
+</div>
+
+<!-- 卡片的内容 -->
+<div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+
+<!-- 卡片的按钮 -->
+<div class="mdui-card-actions">
+  <button class="mdui-btn mdui-ripple">action 1</button>
+  <button class="mdui-btn mdui-ripple">action 2</button>
+  <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+</div>
+
+    </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <video class=" mdui-card mdui-hoverable mdui-img-rounded" style="max-width: 400px;margin-top: 20px;" controls>
+          <source src="http://27.221.99.235/6975E8C0D904483BA295656F24/03000A01005AE9812965D6305C062B3DA5133B-7B28-4741-BBFF-3E782949DAC1.mp4?ccode=0512&duration=379&expire=18000&psid=7d178125846ce18cb6141bce477d016a&sp=&ups_client_netip=3d36b6d9&ups_ts=1526264405&ups_userid=&utid=7dZtE1C0V04CAd6ISKb%2FPwhH&vid=XMzU3OTA4MzQ0MA%3D%3D&vkey=Baf5a37366715c25593b9f40b15817ff0" type="video/mp4">
+        </video>
+        <!-- 卡片中可以包含一个或多个菜单按钮 -->
+  <div class="mdui-card-menu">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+  </div>
+</div>
+
+<!-- 卡片的标题和副标题 -->
+<div class="mdui-card-primary">
+  <div class="mdui-card-primary-title">Title</div>
+  <div class="mdui-card-primary-subtitle">Subtitle</div>
+</div>
+
+<!-- 卡片的内容 -->
+<div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+
+<!-- 卡片的按钮 -->
+<div class="mdui-card-actions">
+  <button class="mdui-btn mdui-ripple">action 1</button>
+  <button class="mdui-btn mdui-ripple">action 2</button>
+  <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+</div>
+
+    </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <video class=" mdui-card mdui-hoverable mdui-img-rounded" style="max-width: 400px;margin-top: 20px;" controls>
+          <source src="http://27.221.99.235/6975E8C0D904483BA295656F24/03000A01005AE9812965D6305C062B3DA5133B-7B28-4741-BBFF-3E782949DAC1.mp4?ccode=0512&duration=379&expire=18000&psid=7d178125846ce18cb6141bce477d016a&sp=&ups_client_netip=3d36b6d9&ups_ts=1526264405&ups_userid=&utid=7dZtE1C0V04CAd6ISKb%2FPwhH&vid=XMzU3OTA4MzQ0MA%3D%3D&vkey=Baf5a37366715c25593b9f40b15817ff0" type="video/mp4">
+        </video>
+        <!-- 卡片中可以包含一个或多个菜单按钮 -->
+  <div class="mdui-card-menu">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+  </div>
+</div>
+
+<!-- 卡片的标题和副标题 -->
+<div class="mdui-card-primary">
+  <div class="mdui-card-primary-title">Title</div>
+  <div class="mdui-card-primary-subtitle">Subtitle</div>
+</div>
+
+<!-- 卡片的内容 -->
+<div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+
+<!-- 卡片的按钮 -->
+<div class="mdui-card-actions">
+  <button class="mdui-btn mdui-ripple">action 1</button>
+  <button class="mdui-btn mdui-ripple">action 2</button>
+  <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+</div>
+
+    </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <video class=" mdui-card mdui-hoverable mdui-img-rounded" style="max-width: 400px;margin-top: 20px;" controls>
+          <source src="http://27.221.99.235/6975E8C0D904483BA295656F24/03000A01005AE9812965D6305C062B3DA5133B-7B28-4741-BBFF-3E782949DAC1.mp4?ccode=0512&duration=379&expire=18000&psid=7d178125846ce18cb6141bce477d016a&sp=&ups_client_netip=3d36b6d9&ups_ts=1526264405&ups_userid=&utid=7dZtE1C0V04CAd6ISKb%2FPwhH&vid=XMzU3OTA4MzQ0MA%3D%3D&vkey=Baf5a37366715c25593b9f40b15817ff0" type="video/mp4">
+        </video>
+        <!-- 卡片中可以包含一个或多个菜单按钮 -->
+  <div class="mdui-card-menu">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+  </div>
+</div>
+
+<!-- 卡片的标题和副标题 -->
+<div class="mdui-card-primary">
+  <div class="mdui-card-primary-title">Title</div>
+  <div class="mdui-card-primary-subtitle">Subtitle</div>
+</div>
+
+<!-- 卡片的内容 -->
+<div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+
+<!-- 卡片的按钮 -->
+<div class="mdui-card-actions">
+  <button class="mdui-btn mdui-ripple">action 1</button>
+  <button class="mdui-btn mdui-ripple">action 2</button>
+  <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+</div>
+
+    </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <video class=" mdui-card mdui-hoverable mdui-img-rounded" style="max-width: 400px;margin-top: 20px;" controls>
+          <source src="http://27.221.99.235/6975E8C0D904483BA295656F24/03000A01005AE9812965D6305C062B3DA5133B-7B28-4741-BBFF-3E782949DAC1.mp4?ccode=0512&duration=379&expire=18000&psid=7d178125846ce18cb6141bce477d016a&sp=&ups_client_netip=3d36b6d9&ups_ts=1526264405&ups_userid=&utid=7dZtE1C0V04CAd6ISKb%2FPwhH&vid=XMzU3OTA4MzQ0MA%3D%3D&vkey=Baf5a37366715c25593b9f40b15817ff0" type="video/mp4">
+        </video>
+        <!-- 卡片中可以包含一个或多个菜单按钮 -->
+  <div class="mdui-card-menu">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+  </div>
+</div>
+
+<!-- 卡片的标题和副标题 -->
+<div class="mdui-card-primary">
+  <div class="mdui-card-primary-title">Title</div>
+  <div class="mdui-card-primary-subtitle">Subtitle</div>
+</div>
+
+<!-- 卡片的内容 -->
+<div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+
+<!-- 卡片的按钮 -->
+<div class="mdui-card-actions">
+  <button class="mdui-btn mdui-ripple">action 1</button>
+  <button class="mdui-btn mdui-ripple">action 2</button>
+  <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+</div>
+
+    </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <video class=" mdui-card mdui-hoverable mdui-img-rounded" style="max-width: 400px;margin-top: 20px;" controls>
+          <source src="http://27.221.99.235/6975E8C0D904483BA295656F24/03000A01005AE9812965D6305C062B3DA5133B-7B28-4741-BBFF-3E782949DAC1.mp4?ccode=0512&duration=379&expire=18000&psid=7d178125846ce18cb6141bce477d016a&sp=&ups_client_netip=3d36b6d9&ups_ts=1526264405&ups_userid=&utid=7dZtE1C0V04CAd6ISKb%2FPwhH&vid=XMzU3OTA4MzQ0MA%3D%3D&vkey=Baf5a37366715c25593b9f40b15817ff0" type="video/mp4">
+        </video>
+        <!-- 卡片中可以包含一个或多个菜单按钮 -->
+  <div class="mdui-card-menu">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+  </div>
+</div>
+
+<!-- 卡片的标题和副标题 -->
+<div class="mdui-card-primary">
+  <div class="mdui-card-primary-title">Title</div>
+  <div class="mdui-card-primary-subtitle">Subtitle</div>
+</div>
+
+<!-- 卡片的内容 -->
+<div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+
+<!-- 卡片的按钮 -->
+<div class="mdui-card-actions">
+  <button class="mdui-btn mdui-ripple">action 1</button>
+  <button class="mdui-btn mdui-ripple">action 2</button>
+  <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+</div>
+
+    </div>
+    </div>
+
+    <div class="mdui-col">
+      <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media">
+        <video class=" mdui-card mdui-hoverable mdui-img-rounded" style="max-width: 400px;margin-top: 20px;" controls>
+          <source src="http://27.221.99.235/6975E8C0D904483BA295656F24/03000A01005AE9812965D6305C062B3DA5133B-7B28-4741-BBFF-3E782949DAC1.mp4?ccode=0512&duration=379&expire=18000&psid=7d178125846ce18cb6141bce477d016a&sp=&ups_client_netip=3d36b6d9&ups_ts=1526264405&ups_userid=&utid=7dZtE1C0V04CAd6ISKb%2FPwhH&vid=XMzU3OTA4MzQ0MA%3D%3D&vkey=Baf5a37366715c25593b9f40b15817ff0" type="video/mp4">
+        </video>
+        <!-- 卡片中可以包含一个或多个菜单按钮 -->
+  <div class="mdui-card-menu">
+    <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+  </div>
+</div>
+
+<!-- 卡片的标题和副标题 -->
+<div class="mdui-card-primary">
+  <div class="mdui-card-primary-title">Title</div>
+  <div class="mdui-card-primary-subtitle">Subtitle</div>
+</div>
+
+<!-- 卡片的内容 -->
+<div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+
+<!-- 卡片的按钮 -->
+<div class="mdui-card-actions">
+  <button class="mdui-btn mdui-ripple">action 1</button>
+  <button class="mdui-btn mdui-ripple">action 2</button>
+  <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+</div>
+
+    </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+<div class="mdui-fab-wrapper" mdui-fab="{trigger: 'hover'}" >
+  <button class="mdui-fab mdui-ripple mdui-color-theme-accent">
+    <i class="mdui-icon material-icons">add</i>
+    <i class="mdui-icon mdui-fab-opened material-icons">adb</i>
+  </button>
+
+
+
+  <div class="mdui-fab-dial">
+    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink"><i class="mdui-icon material-icons">backup</i></button>
+    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red"><i class="mdui-icon material-icons">bookmark</i></button>
+    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange"><i class="mdui-icon material-icons">access_alarms</i></button>
+    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue"><i class="mdui-icon material-icons">touch_app</i></button>
+  </div>
+</div>
+
+
+<div class="mdui-container" style="padding: 90px;">
+  <div class="mdui-textfield mdui-textfield-expandable">
+    <button class="mdui-textfield-icon mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></button>
+    <input class="mdui-textfield-input" type="text" placeholder="Search"/>
+    <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
+  </div>
+
+</div>
+
+<div class="mdui-container">
+  <div class="mdui-chip">
+    <span class="mdui-chip-icon"><i class="mdui-icon material-icons">face</i></span>
+    <span class="mdui-chip-title">Example Chip</span>
+    <span class="mdui-chip-delete"><i class="mdui-icon material-icons">face</i></span>
+  </div>
+</div>
+
+</body>
+</html>
